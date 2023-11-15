@@ -1,0 +1,89 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    box-sizing: border-box;    
+}
+
+.padre {
+    position: relative; /* Este elemento se posiciona en relación con su posición original en el flujo normal del documento. */
+    width: 500px;
+    height: 320px; 
+    background-color:#393e46; /* Usar color de fondo de la pagina */
+}
+
+.carta {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: /* Se utiliza para controlar cómo se aplican las transformaciones 3D a los elementos. */
+         preserve-3d; /* Este hace que los elementos hijos mantienen su posición relativa en el espacio 3D generado por las transformaciones aplicadas al elemento padre. */
+    
+    transition: /* Se usa para controlar las animaciones de los cambios de un elemento. */
+     all   /* Indica que se aplicara una transicion a todas las propiedades quue cambien en el elemento */
+      0.5s  /* Indica la funcion de temporizacion para controlar la velocidad de transicion. */
+       ease;    /* Func de temporizacion que hace que la transicion comience lentamente */
+}
+
+.carta:hover {
+    transform: /* se utiliza para aplicar transformaciones a un elemento HTML.  */
+     rotateY(180deg);  /* se usa para aplicar una rotación de 180 grados en el eje Y al elemento al que se aplica la propiedad. */
+}
+
+.frontal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    backface-visibility:  /*  Esta propiedad se utiliza para controlar si la cara posterior de un elemento 3D es visible o no durante transformaciones 3D, como rotaciones. */
+     hidden;    /* significa que la cara trasera del elemento será ocultada durante transformaciones 3D. */
+
+    background:#393e46; ; /* Color de fondo, carta frontal.*/
+    
+}
+
+.frontal img { /* Tamaño para que la imagen cubra toda la carta. */ 
+    width: 100%;    
+    height: 100%;
+    text-align: center;
+   
+
+}
+
+.trasero {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #393e46; /* Color de fondo, carta trasera. */
+    color:bisque;
+    transform: rotateY(180deg);
+    text-align: justify;
+}
+
+.trasero h1 {
+    font-size: 18px;
+}
+
+.trasero p {
+    font-size: 15px;
+    height: auto;
+    font-family: 'Playpen Sans', cursive;
+    color:	rgb(211, 211, 211);
+}
+
+
+.frontal p{
+    
+    font-family: 'Playpen Sans', cursive;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 22px;
+    color: black;
+    
+
+}

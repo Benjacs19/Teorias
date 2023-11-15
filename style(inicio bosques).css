@@ -1,0 +1,170 @@
+button{
+    margin-left: 10px;
+}
+
+:root{
+    --color1: #ffffff; 
+    --color2: #000000;
+    --color3: #8a2be2;
+    --color4: #9932cc;
+    --color5: #373737;
+    --color6: #e2e2e2;
+    --color7: #506109;
+    --color8: #4b3524;
+    --Whatsapp: #57CE72;
+    --Instagram: #dd2a7b;
+    --Telegram: #1d92d1;
+
+}
+
+*{/*BOxsizing*/
+    box-sizing: border-box;
+}
+
+html{/*Conversion de 1 rem a 10px*/
+    font-size: 62.5%;
+}
+
+body{/*Globales*/
+    font-size: 16px;
+    margin: 0px;/*Margin del body se reduce a 0*/
+    background-color: var(--color5);
+}
+
+.nav-bg{
+    background-color: var(--color7);
+    border: 5px solid black;
+}
+
+.nav_principal {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav_principal a {
+    padding: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    color: var(--color6);
+    font-family: 'Merienda';
+    font-size: 2rem;
+    font: weight 900px; ;
+}
+
+@media (min-width:768px){
+    .nav_principal{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width:768px){
+    .nav_principal a{
+        width: 15rem;
+    }
+}
+
+.div_principal{
+    background-image: url(bosque-de-aokigahara-japon_c1fd1810_1280x853.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;   
+    flex-direction: column-reverse; 
+}
+
+@media (min-width:768px){
+        .div_principal{
+            flex-direction: row-reverse;
+            justify-content: center;
+        }
+}
+
+@media(min-width:768px){
+    .nom_principal{
+        font-size: 5rem;
+    }
+}
+
+.div_iqz, .div_der{
+    border: 2px solid whitesmoke;
+
+}
+
+.div_der{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid whitesmoke;
+}
+
+.nom_principal {
+    color: aliceblue;
+}
+
+
+
+.div3{
+    border: 2px solid whitesmoke;
+    background-color: rgb(22, 17, 10);
+    width: auto;
+    height: 412px;
+    
+}
+
+div > .img1{
+    border-radius: 100%;
+    width: 50%;
+    height: autos;
+    margin-left: 25%;
+}
+
+.div_der{
+    display: grid;
+    grid-template-columns: 
+    repeat(
+        auto-fit,
+        minmax(150px,1fr)
+    );
+    gap: 32px;
+}
+
+.img2{
+    width: 20%;
+    height: 20%;
+    margin-left: 40%;
+    margin-top: 5%;
+}
+
+.nom_principal, h2 {
+    margin-left: 25px;
+    padding-top: 20px;
+    color: var(--color2);
+    background-color: var(--color7);
+    filter: opacity(87%);
+}
+
+a{
+    color: var(--color2);
+    background-color: var(--color2);
+    filter: opacity(87%);
+}
+
+.div_mail, h5 {
+    color: var(--color1);
+    text-decoration: none;
+}
+
+.h12{
+    color: var(--color2);
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .5;
+    transition: .10;
+}
+
+.h12:hover:hover {
+    color: var(--color2);
+    background-color:var(--color6);
+    border: 4px solid var(--color2);
+    margin-bottom: 2px;
+}

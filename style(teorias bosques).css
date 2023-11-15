@@ -1,0 +1,88 @@
+:root{ /*declaracion de variables*/
+    --color1: #476128;
+    --color2: #412916;
+    --color3: #ffffff; 
+    --color4: #000000;
+    --color5: #8a2be2;
+    --color6: #9932cc;
+    --color7: #373737;
+    --color8: #e2e2e2;
+}
+.item1{grid-area: Header;}
+.item2{grid-area: Menu;}
+.item3{grid-area: Main;}
+
+.item4{
+    grid-area: Right;
+    border: 1px solid black;
+    margin-top: 550px;
+    margin-bottom: 550px;
+    padding-top: 50px;
+}
+
+.item5{
+    grid-area: Footer;
+    text-decoration: none;
+}
+.item6{grid-area: Footer;}
+
+body{
+    background-color: var(--color1);
+}
+
+#a1,#a2,#a3,#a4{
+    color: var(--color3);
+    font-size: 2rem;
+    text-decoration: none;
+    
+}
+
+#a1:hover, #a2:hover, #a3:hover, #a4:hover{
+    color: var(--color3);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'Header Header Header Header Header Header'
+    'Menu Main Main Main Right Right'
+    'Menu Footer Footer Footer Footer Footer'
+    ;
+    gap: 10px;
+    background-color: var(--color2);
+    padding: 10px;
+}
+
+.grid-container > div{
+    background-color: var(--color1);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+div {
+    font-family: 'Dancing Script', cursive;
+}
+.bi{width: 2rem;
+    height: 2rem;
+    color: rgb(51, 153, 80);
+}
+.bi1{
+    width: 2rem;
+    height: 2rem;
+    color: rgb(125, 22, 148);
+}
+
+.navegacion-principal .material-symbols-outlined{
+    color: #043ebc;
+}
+.bi2{
+    width: 2rem;
+    height: 2rem;
+    color: #ff0000;
+}
+#a1:focus,#a2:focus,#a3:focus,#a4:focus{
+    color:#043ebc;
+}
+.nav-bg{
+    text-align: center;
+}
+

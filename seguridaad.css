@@ -1,0 +1,79 @@
+/*barra de navegacion*/
+
+.nav-bg{
+    background-color: var(--color4); /*color de fondo */
+}
+
+.navegacion_principal{
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar{
+    background-image: url(oceano.jpg); /*color de fondo */
+    opacity: 0.8;
+    background-size: cover; 
+    background-repeat: no-repeat; /*si la imagen se repite o no */
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+}
+
+.navegacion_principal a {
+    padding: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    color: var(--blanco); /*color de las letras */
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.navbar a {
+    
+    padding: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    color: var(--nuevo); /*color de las letras */
+    opacity: 0.5;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .navegacion_principal{
+        flex-direction: row;
+        justify-content: end ;
+    }
+    .navbar{
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+.navegacion_principal a:hover{
+    background-color: var(--color5); /*color al seleccionar */
+}
+
+.navbar a:hover{
+    background-color: var(--color10); /*color al seleccionar */
+}
+
+@media (min-width: 768px) {
+    .navegacion_principal a{
+        width: 15rem;
+    }
+
+    .navbar a{
+        width: 15rem;
+    }
+    .principal {
+        flex-direction: row;
+    }
+}

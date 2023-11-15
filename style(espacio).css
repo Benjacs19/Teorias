@@ -1,0 +1,83 @@
+:root{ /*declaracion de variables*/
+    --color1:#ff0000;
+    --color2:#622c94cb;
+    --color3:#131413;
+    --color4: rgb(235, 211, 255);
+}
+.item1{grid-area: Header;}
+.item2{grid-area: Menu;}
+.item3{grid-area: Main;}
+.item4{grid-area: Right;}
+.item5{grid-area: Footer;}
+.item6{grid-area: Footer;}
+
+body{
+    background-image: url(web_first_images_release_0.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;   
+    flex-direction: column-reverse;
+}
+
+#a1,#a2,#a3,#a4{
+    color: var(--color3);
+    font-size: 2rem;
+}
+
+#a1:hover,#a2:hover,#a3:hover,#a4:hover{
+    color: #fffb00;
+}
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+}
+.grid-container {
+    display: grid;
+    grid-template-areas: 'Header Header Header Header Header Header'
+    'Menu Main Main Main Right Right'
+    'Menu Footer Footer Footer Footer Footer'
+    ;
+    gap: 10px;
+    background-color: var(--color2);
+    padding: 10px;
+}
+
+.grid-container > div{
+    background-color: var(--color4);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+div {
+    font-family: 'Dancing Script', cursive;
+}
+.bi{width: 2rem;
+    height: 2rem;
+    color: rgb(51, 153, 80);
+}
+.bi1{
+    width: 2rem;
+    height: 2rem;
+    color: rgb(197, 243, 255);
+}
+
+.navegacion-principal .material-symbols-outlined{
+    color: rgb(0, 162, 255);
+}
+.bi2{
+    width: 2rem;
+    height: 2rem;
+    color: var(--color4);
+}
+#a1:focus,#a2:focus,#a3:focus,#a4:focus{
+    color:var(--color4);
+}
+.nav-bg{
+    text-align: center;
+}
+ html{
+    @media screen and (max-width: 540px){
+        font-size: 12px;
+    }
+}
