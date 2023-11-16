@@ -44,8 +44,8 @@ body{
 	}
 	body{
 		background: url(antartica-gran-fondo.jpg);
-		background-size: 100vw 100vh ;
-		height : 100vh;
+		background-size: 100vh 100vw ;
+		
 		background-repeat: no-repeat;
 	}
 	.capa{
