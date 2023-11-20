@@ -16,7 +16,11 @@ body{
     background-size: cover;
 }
 
-
+@media (max-width:768px){
+    .grid-container{
+        grid-template-areas: auto;
+    }
+}
 
 
 #a1,#a2,#a3,#a4{
