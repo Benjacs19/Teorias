@@ -11,8 +11,13 @@
 .item6{grid-area: Footer;}
 
 body{
-    background-color:  #00304E;
+    background-image: url(img/antartida-hielo-e1595901024519.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+
+
 
 #a1,#a2,#a3,#a4{
     color: #e2fcfb;
@@ -24,6 +29,7 @@ body{
     color: #ff0000;
 }
 
+
 .grid-container {
     display: grid;
     grid-template-areas: 'Header Header Header Header Header Header'
@@ -31,12 +37,15 @@ body{
     'Menu Footer Footer Footer Footer Footer'
     ;
     gap: 10px;
-    background-color: 	#00304E;
     padding: 10px;
+}
+.item2{
+    width: 290px;
 }
 
 .grid-container > div{
     background-color:#e2fcfb;
+    filter: opacity(75%);
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
@@ -68,4 +77,6 @@ div {
 .nav-bg{
     text-align: center;
 }
+
+
 
