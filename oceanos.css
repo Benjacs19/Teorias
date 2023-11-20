@@ -219,36 +219,39 @@ body{
 
 
 
-@media(max-width:768px){
-	.contenedor {
-		display: flex;
-		flex-direction: column;
+@media screen and (max-width: 768px){
+
+
+	body{
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+	}
+
+	.contenedor{
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-areas: 
+		"sidebar-1 "
+	 	"contenido 	"
+		"sidebar-2";
+		justify-content: center;
 		align-items: center;
 		
-	}
 
-	.menu{
+	}
+	
+	
+}
+
+@media (max-width: 768px) {
+    .menu{
 		display: flex;
-		justify-content: center;
+		justify-content: end;
 		flex-direction: column;
 	}
-
-	 .padre  {
-		width: 340px;
-		height: 250px;
-	}
-
-	.padre  {
-		width: 340px;
-		height: 250px;
-	}
-
-    .padre {
-		width: 340px;
-		height: 700px;
-	}
-
 }
+
 
 #triangulo:focus , #atlantida:focus ,  #bestia:focus{
 	color: var(--color3);
