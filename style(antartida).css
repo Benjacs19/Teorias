@@ -61,13 +61,13 @@ body{
 div {
     font-family: 'Dancing Script', cursive;
 }
-.bi{width: 2rem;
-    height: 2rem;
+.bi{width: 4rem;
+    height: 4rem;
     color: rgb(51, 153, 80);
 }
 .bi1{
-    width: 2rem;
-    height: 2rem;
+    width: 4rem;
+    height: 4rem;
     color: rgb(125, 22, 148);
 }
 
