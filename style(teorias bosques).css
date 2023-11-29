@@ -12,13 +12,7 @@
 .item2{grid-area: Menu;}
 .item3{grid-area: Main;}
 
-.item4{
-    grid-area: Right;
-    border: 1px solid black;
-    margin-top: 550px;
-    margin-bottom: 550px;
-    padding-top: 50px;
-}
+
 
 .item5{
     grid-area: Footer;
