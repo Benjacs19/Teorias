@@ -15,7 +15,7 @@ html{/*Conversion de 1 rem a 10px*/
 }
 
 body{
-    background-color:#00A9FF;
+    background-image: url(iceberg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
