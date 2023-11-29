@@ -10,6 +10,10 @@
 .item5{grid-area: Footer;}
 .item6{grid-area: Footer;}
 
+html{/*Conversion de 1 rem a 10px*/
+    font-size: 62.5%;
+}
+
 body{
     background-image: url(antartida-hielo-e1595901024519.jpg);
     background-repeat: no-repeat;
